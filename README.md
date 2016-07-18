@@ -18,4 +18,4 @@ Voltera V-One Application Software
 - Update help links
 
 #v0.1.8
-- updated Hellow World GTL
+- updated Hello World GTL
