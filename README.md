@@ -1,5 +1,10 @@
 # styx
 Voltera V-One Application Software
+#v0.3.0
+- Enhanced support page. Able to submit support package through App. 
+- Firmware will automatically update if no printer does not report it's version. (Helps with botched upgrades)
+- Highlighted pad indicator is more obvious (Yellow & Pulsing)
+- Added Alt+R shortcut to release motors. And motors will release after parking. 
 
 #v0.2.1
 - Automatic FW Updates added. SW will check on startup.
