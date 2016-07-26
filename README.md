@@ -1,5 +1,9 @@
 # styx
 Voltera V-One Application Software
+
+#v0.3.1
+- Fixed minor bug where printer expected a dispenser to be mounted when starting a bake cycle.
+
 #v0.3.0
 - Enhanced support page. Able to submit support package through App. 
 - Firmware will automatically update if no printer does not report it's version. (Helps with botched upgrades)
