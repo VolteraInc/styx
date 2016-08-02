@@ -1,6 +1,21 @@
 # styx
 Voltera V-One Application Software
 
+#v0.4.1
+- Fixed minor bug that occurred after probing.
+
+#v0.4.0
+- Added *Restore Defaults* button in the settings window. Also default settings appear as placeholders.
+- Typing custom settings is possible now. Previous data validation was broken/frustrating.
+- App will periodically check for software updates.
+- If a circuit file fails to load, the app should recover and allow you to upload another file.
+- Added 3 more firmware errors to help detect faulty/unexpected probe triggering.
+- Printer will rotate dispenser gears before descending (fixes a poorly mounted dispenser by meshing gears)
+- Fixed critical bug in logging where the maximum file size was not being respected (resulting in abnormally large log files)
+- Fixed critical bug in windows installer where files could not be loaded.
+- Files that fail to load, can now be submitted through the support package.
+- Added keyboard shortcuts for easier calibration (- , + )
+
 #v0.3.1
 - Fixed minor bug where printer expected a dispenser to be mounted when starting a bake cycle.
 
