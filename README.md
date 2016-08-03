@@ -1,6 +1,12 @@
 # styx
 Voltera V-One Application Software
 
+#v0.4.3
+- Reduced unecessary logging. 
+
+#v0.4.2
+- Fixed critical bug that occured when log files exceeded a certain size
+
 #v0.4.1
 - Fixed minor bug that occurred after probing.
 
