@@ -1,5 +1,18 @@
 # styx
 Voltera V-One Application Software
+#v0.5.0
+- Removed *.DRL extension as an option from hole file selection. Only *.TXT files are supported.
+- Reduced Z-Motor speed which fixed height variation issues in extended prints. 
+- Minor bug fix when extracting serial port information.
+- Added ability to bake wet ink from the reflow procedure. 
+- After a setting is changed, system will prevent a print until change has been applied.
+- System will prevent settings from being changed while a print is active.
+- Procedure Status and Print Status will be displayed to user when relevant. 
+- Software will no longer connect to B1 printers (Incompatible anyway)
+
+Known Issues
+- It is still possible to change settings while a print is active if +/- arrows were pressed.
+
 
 #v0.4.3
 - Reduced unecessary logging. 
