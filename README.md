@@ -1,4 +1,3 @@
-# styx
 Voltera V-One Application Software
 #v0.5.0
 - Removed *.DRL extension as an option from hole file selection. Only *.TXT files are supported.
@@ -61,4 +60,4 @@ Known Issues
 - Update help links
 
 #v0.1.8
-- updated Hello World GTL
+- Updated Hello World GTL
