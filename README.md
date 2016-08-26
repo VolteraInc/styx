@@ -1,4 +1,3 @@
-Voltera V-One Application Software
 #v0.5.0
 - Removed *.DRL extension as an option from hole file selection. Only *.TXT files are supported.
 - Reduced Z-Motor speed which fixed height variation issues in extended prints. 
