@@ -1,3 +1,34 @@
+#v0.6.0
+
+Double Sided
+- Introduced ability to do a 'Simple' or 'Aligned' print. 
+- Simple prints allow you to print exactly where you want.
+- Aligned prints require you to locate 2 points on the circuit. (Identical to solder paste)
+- If loading a bottom gerber file, print will automaticaly be mirrored. 
+- Added a smarter algorithm for identifying the 2 points to locate.
+
+Gerber Processing
+- Rounded pads should now render properly.
+- Pads can now end in a line, instead of a square depending on size. This will reduce the amount of ink dispensed.
+- Software will detect enveloped pads (a small pad inside of a large one) and avoid double printing. 
+- Improved handling of very small Eagle pads with rounded corners.
+- Fixed minor bug processing non-vector text from Altium Gerbers.
+
+Firmware (0.0.11)
+- Fix to help prevent probe from pushing into calibration plate.
+
+Other
+- Added Alt+C as a shortcut for the gCode Console
+- Added release notes that pop up on startup.
+- Increased default print speed by 66%
+- Changed default print settings, large pads and long traces should have better infill. 
+
+Bug Fixes
+- Fixed minor bug where the wrong pad was highlighted in large circuits during Locate Pads step. 
+- Fixed authentication problem that occured when sending the support package for some users.
+- Fixed software crash that would occur when dragging around selection box in print & calibrate step
+
+
 #v0.5.0
 - Removed *.DRL extension as an option from hole file selection. Only *.TXT files are supported.
 - Reduced Z-Motor speed which fixed height variation issues in extended prints. 
