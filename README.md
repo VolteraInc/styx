@@ -1,16 +1,16 @@
-#v0.6.0
+#v0.6.1
 
 Double Sided
-- Introduced ability to do a 'Simple' or 'Aligned' print. 
+- Introduced ability to do a 'Simple' or 'Aligned' print.
 - Simple prints allow you to print exactly where you want.
-- Aligned prints require you to locate 2 points on the circuit. (Identical to solder paste)
-- If loading a bottom gerber file, print will automaticaly be mirrored. 
+- Aligned prints require you to locate 2 points on the circuit. (Identical to solder procedure)
+- If loading a bottom gerber file, print will automatically be mirrored.
 - Added a smarter algorithm for identifying the 2 points to locate.
 
 Gerber Processing
 - Rounded pads should now render properly.
-- Pads can now end in a line, instead of a square depending on size. This will reduce the amount of ink dispensed.
-- Software will detect enveloped pads (a small pad inside of a large one) and avoid double printing. 
+- When filling pads, allow the innermost pass to be a line, instead of forcing it to be a rectangle. This will reduce over-filling.
+- Detect and ignore fully enveloped pads (e.g. a small pad inside of a large one) to avoid double dispensing.
 - Improved handling of very small Eagle pads with rounded corners.
 - Fixed minor bug processing non-vector text from Altium Gerbers.
 
@@ -18,25 +18,25 @@ Firmware (0.0.11)
 - Fix to help prevent probe from pushing into calibration plate.
 
 Other
-- Added Alt+C as a shortcut for the gCode Console
-- Added release notes that pop up on startup.
+- Alt+C opens the gCode Console
+- Release notes display on startup the first time a new version is opened.
 - Increased default print speed by 66%
-- Changed default print settings, large pads and long traces should have better infill. 
+- Changed default print settings to improve filling of large pads and wide traces.
 
 Bug Fixes
-- Fixed minor bug where the wrong pad was highlighted in large circuits during Locate Pads step. 
-- Fixed authentication problem that occured when sending the support package for some users.
+- Fixed minor bug where the wrong pad was highlighted in large circuits during Locate Pads step.
+- Fixed authentication problem that occurred when sending the support package for some users.
 - Fixed software crash that would occur when dragging around selection box in print & calibrate step
 
 
 #v0.5.0
 - Removed *.DRL extension as an option from hole file selection. Only *.TXT files are supported.
-- Reduced Z-Motor speed which fixed height variation issues in extended prints. 
+- Reduced Z-Motor speed which fixed height variation issues in extended prints.
 - Minor bug fix when extracting serial port information.
-- Added ability to bake wet ink from the reflow procedure. 
+- Added ability to bake wet ink from the reflow procedure.
 - After a setting is changed, system will prevent a print until change has been applied.
 - System will prevent settings from being changed while a print is active.
-- Procedure Status and Print Status will be displayed to user when relevant. 
+- Procedure Status and Print Status will be displayed to user when relevant.
 - Software will no longer connect to B1 printers (Incompatible anyway)
 
 Known Issues
@@ -44,10 +44,10 @@ Known Issues
 
 
 #v0.4.3
-- Reduced unecessary logging. 
+- Reduced unnecessary logging.
 
 #v0.4.2
-- Fixed critical bug that occured when log files exceeded a certain size
+- Fixed critical bug that occurred when log files exceeded a certain size
 
 #v0.4.1
 - Fixed minor bug that occurred after probing.
@@ -68,10 +68,10 @@ Known Issues
 - Fixed minor bug where printer expected a dispenser to be mounted when starting a bake cycle.
 
 #v0.3.0
-- Enhanced support page. Able to submit support package through App. 
+- Enhanced support page. Able to submit support package through App.
 - Firmware will automatically update if no printer does not report it's version. (Helps with botched upgrades)
 - Highlighted pad indicator is more obvious (Yellow & Pulsing)
-- Added Alt+R shortcut to release motors. And motors will release after parking. 
+- Added Alt+R shortcut to release motors. And motors will release after parking.
 
 #v0.2.1
 - Automatic FW Updates added. SW will check on startup.
@@ -85,7 +85,7 @@ Known Issues
 
 #v0.2.0
 - Added e-stop shortcut (esc,esc)
-- [Mac] Remove unnecesary items from Application menu 
+- [Mac] Remove unnecessary items from Application menu
 - Update sidebar videos
 - Update help links
 
