@@ -1,4 +1,4 @@
-#v0.6.1
+#v0.6.2
 
 Double Sided
 - Introduced ability to do a 'Simple' or 'Aligned' print.
