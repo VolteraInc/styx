@@ -1,3 +1,6 @@
+#v0.6.3
+- Raise the probe higher during alignment confirmation to ensure we exit vias
+
 #v0.6.2
 
 Double Sided
