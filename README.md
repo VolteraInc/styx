@@ -1,3 +1,15 @@
+#v0.6.4
+
+File Selection
+- Added *.GBP extension to file picker
+- Deleting a file will force circuit processing again.
+- Fixed bug where loading recent files could load incorrect files. 
+
+Gerber Processing
+- Improved Gerber processing - better support for thermals and self intersecting lines. 
+- Fixed minor parsing issue seen in Diptrace and Pulsonix Gerbers 
+- Fixed minor Drill file issue seen in Kicad files when origin was in top left.
+
 #v0.6.3
 - Raise the probe higher during alignment confirmation to ensure we exit vias
 
