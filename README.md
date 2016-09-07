@@ -10,6 +10,9 @@ Gerber Processing
 - Fixed minor parsing issue seen in Diptrace and Pulsonix Gerbers 
 - Fixed minor Drill file issue seen in Kicad files when origin was in top left.
 
+Other
+- Prevent multiple pads from being validated at the same time.
+
 #v0.6.3
 - Raise the probe higher during alignment confirmation to ensure we exit vias
 
