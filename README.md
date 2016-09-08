@@ -1,3 +1,9 @@
+#v0.6.5
+
+- Prefer holes when selecting targets for aligned prints.
+- Fixed binding conflict with arrow keys when console is visible.
+
+
 #v0.6.4
 
 File Selection
