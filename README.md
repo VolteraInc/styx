@@ -1,8 +1,15 @@
-#v0.6.5
+#v0.7.0
 
+- Step size during fine movement in locate pads reduced from 0.1mm to 0.05mm.
+- Single line traces will now be truncated at pads. Should prevent probe from descending into holes. (Thanks @emcniece, @agustinbmed)
+- Improved recovery from serial communication errors.
+- Software will reconnect to a printer if it happens to appear on a different port after a disconnect.
+- Firmware update will retry if errors occur.
+- Resolved an invalid function call that would have left the app in a semi-responsive state.
+
+#v0.6.5
 - Prefer holes when selecting targets for aligned prints.
 - Fixed binding conflict with arrow keys when console is visible.
-
 
 #v0.6.4
 
