@@ -1,5 +1,15 @@
-#v0.7.0
+#v0.8.0
+- Improved error messages especially when loading circuits
+- Ability to *Load Last Circuit* even if printer is disconnected (Thanks @a2retro)
+- Added *.GBR extension to solder paste dispenser (Thanks @mHarris)
+- Removed panning ability in print preview. Consistent with Eagle UI.
+- Resolved a print preview glitch that occurred when bounding box in selective print was dragged outside preview area.
+- For small rectangular pads, center line will actually be centered, instead of offset to a side.
+- During Align Circuit, ability to select alignment pads
+- During Align Circuit, use measured position of first pad to improve estimated position of second pad (Thanks @a2retro)
+- Ability to compensate for backlash in X and Y axis through firmware parameter.
 
+#v0.7.0
 - Step size during fine movement in locate pads reduced from 0.1mm to 0.05mm.
 - Single line traces will now be truncated at pads. Should prevent probe from descending into holes. (Thanks @emcniece, @agustinbmed)
 - Improved recovery from serial communication errors.
