@@ -1,3 +1,22 @@
+#v0.9.0
+Forum Integration
+- Show headlines from forums on dashboard and during dispense steps
+
+Alignment
+- Fixed bug in align circuit that was preventing holes from being used in some cases (@matt)
+- Keep probe closer to the surface when aligning (thanks @mharris, @a2retro)
+
+Gerber Processing
+- Split traces to prevent double dispensing when traces overlap
+- Resolved 3 CAD program specific problems (Allegro, Ultiboard)
+
+Other
+- Prevent dispense height of 0 (thanks Nick)
+- Allow probe pitch as low as 0.1mm (thanks James)
+- Disable print height adjustment buttons when at min or max value
+- No more whitescreen if you rush to the alignment step before the circuit is fully processed (@alroyalmeida)
+- Enhanced logging to help track down whitescreen bug
+
 #v0.8.0
 - Improved error messages especially when loading circuits
 - Ability to *Load Last Circuit* even if printer is disconnected (Thanks @a2retro)
