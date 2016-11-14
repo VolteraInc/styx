@@ -1,3 +1,27 @@
+#v0.10.0
+Disconnections while Heating
+- Eliminate occasional disconnects while heating by disabling PID control
+- Display an error if printer disconnects while baking
+
+Gerber Changes
+- Improved handling of irregular shaped polygons (Like 'S' or figure '8's)
+- Ignore deprecated 'Mirror Image' and 'Axis Select' commands
+- Fixed pad handling for Kicad Gerbers.
+- Improved handling of Gerbers that use Paint and Scratch approach when creating pads.
+- Single pass lines that intersect with other single pass lines will no longer be split into separate lines
+
+Connection Handling
+- More precise switching from normal communication to firmware upload mode
+- Improve handling of printer resets
+- Wait until the printer boot up completes before allowing user to send commands to it.
+- Disable Home and E-Stop buttons during firmware upload and when not connected (thanks HP)
+- Show the firmware upload overlay, if uploading, after closing another overlay (e.g. release notes, support, etc) (thanks HP)
+
+Other
+- Stop heating and move to the home position when a procedure is closed or ended
+- Fixed issue where support package would fail to submit if printer was not connected.
+- Eliminate extra character that was sometimes added to gcode console when using the alt+c shortcut
+
 #v0.9.0
 Forum Integration
 - Show headlines from forums on dashboard and during dispense steps
