@@ -1,3 +1,6 @@
+#v0.10.1
+- Fixed bug where the first trace in Eagle Gerbers was discarded.
+
 #v0.10.0
 Disconnections while Heating
 - Eliminate occasional disconnects while heating by disabling PID control
@@ -53,6 +56,7 @@ Other
 - Ability to compensate for backlash in X and Y axis through firmware parameter.
 
 #v0.7.0
+
 - Step size during fine movement in locate pads reduced from 0.1mm to 0.05mm.
 - Single line traces will now be truncated at pads. Should prevent probe from descending into holes. (Thanks @emcniece, @agustinbmed)
 - Improved recovery from serial communication errors.
