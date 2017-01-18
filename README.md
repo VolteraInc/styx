@@ -1,3 +1,11 @@
+#v0.11.1
+- Solder procedure now accepts a holes file
+- Display an error and stop probing if probe drops into a hole or misses board
+- Highlight forum announcements in the notification window
+- Accept gerber files with a .art extension
+- Accept text-based excellon files with a .drl extension
+- Fixed a rare whitescreen issue during app launch
+
 #v0.10.1
 - Fixed bug where the first trace in Eagle Gerbers was discarded.
 
