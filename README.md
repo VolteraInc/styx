@@ -1,10 +1,25 @@
+#v0.12.0
+- Release the motors when STOP is pressed. This forces the printer to re-calibrate the tool on the next action.
+- Delay tool calibration until an action, e.g. OUTLINE, CALIBRATE, etc.
+- Drag-based selection is now aligned to the circuit. It's odd at first, but make selection
+  on a rotated circuit as easy as it is for unrotated circuits
+- Click-based selection now has a few pixels of tolerance, so near misses will still select
+- Fix: Click-based selection properly selects the closest path
+- Fix: When reconnecting to the printer, remind it what the current tool is.
+- Fix: Alt+o will no longer executes an Outline outside of the OutlineStep
+- Fix: detect printer’s ‘--start--’ message even when it’s prefixed with a partially sent message from the previous run
+- Fix: Handle early end-of-file when parsing gerbers.
+
+#v0.11.2
+- reduced sensitivity of hole detection (thanks @fred and @matt)
+
 #v0.11.1
 - Solder procedure now accepts a holes file
 - Display an error and stop probing if probe drops into a hole or misses board
 - Highlight forum announcements in the notification window
 - Accept gerber files with a .art extension
 - Accept text-based excellon files with a .drl extension
-- Fixed a rare whitescreen issue during app launch
+- Fixed a rare whitescreen issue during app launch (thanks @ryan13)
 
 #v0.10.1
 - Fixed bug where the first trace in Eagle Gerbers was discarded.
