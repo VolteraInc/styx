@@ -9,6 +9,7 @@
 - Fix: Alt+o will no longer executes an Outline outside of the OutlineStep
 - Fix: detect printer’s ‘--start--’ message even when it’s prefixed with a partially sent message from the previous run
 - Fix: Handle early end-of-file when parsing gerbers.
+- Fix: Treat no toolpaths in circuit as an error
 
 #v0.11.2
 - reduced sensitivity of hole detection (thanks @fred and @matt)
