@@ -1,3 +1,10 @@
+#v0.12.1
+- fix: Print procedure no longer breaks if you get to the Prime Conductor step before the priming patten is loaded
+- fix: Catch errors when parsing forum topics
+- fix: OutlineStep no longer breaks if you rush to it before the circuit is fully loaded
+- fix: Click-to-select no longer fails if it's parentNode is not available when the mouse button is released
+- fix: Name and Email fields in the Support overlay no have proper widths
+
 #v0.12.0
 - Release the motors when STOP is pressed. This forces the printer to re-calibrate the tool on the next action.
 - Delay tool calibration until an action, e.g. OUTLINE, CALIBRATE, etc.
