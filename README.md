@@ -1,6 +1,22 @@
+#v0.14.0
+- fix-performance: Manual movements during alignment are now _way_ more responsive
+- fix-performance: Displaying the g-code console no longer impacts probing or dispensing
+- fix-performance: UI no longer stalls during computations
+- fix-performance: Application now starts slightly faster
+- add: G-code console no longer adds an executed command to the command history if it is the same as the previous command
+- add: G-code console no longer clears the current unexecuted command input if you decide to browse command history
+- add: G-code console now places cursor at end of command when browsing command history
+- fix: Prevent unnecessary tool calibration when closing a procedure by setting tool to None
+- fix: The CommunityBox will now properly display html entities (like &amp;) in topic titles
+- fix: Window background color is now set properly, eliminating white screen on startup
+- fix-regression: MountDispenser step in Solder now shows circuit (no longer blank)
+- fix-regression: ConfirmAlignmentStep target toolpath is once again highlighted
+- fix-regression: AlignmentStep target toolpaths are once again highlighted (in addition to the crosshairs)
+- fix-regression: AlignmentStep disabled drag-to-select
+
 #v0.13.0
 - fix: [Gerber] Orcad files with thermal pads are now interpreted properly (Thanks Aaron)
-- fix: Solder procedure no longer breaks at priming step
+- fix: Solder procedure no longer breaks at priming step (Thanks Timothy, Patrick, Brandon and Aaron)
 - fix: Catch errors when parsing forum topics
 - fix: OutlineStep no longer breaks if you rush to it before the circuit is fully loaded
 - fix: Click-to-select no longer fails if it's parentNode is not available when the mouse button is released
