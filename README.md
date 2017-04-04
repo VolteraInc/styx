@@ -1,18 +1,23 @@
 #v0.14.0
-- fix-performance: Manual movements during alignment are now _way_ more responsive
-- fix-performance: Displaying the g-code console no longer impacts probing or dispensing
-- fix-performance: UI no longer stalls during computations
-- fix-performance: Application now starts slightly faster
-- add: G-code console no longer adds an executed command to the command history if it is the same as the previous command
-- add: G-code console no longer clears the current unexecuted command input if you decide to browse command history
-- add: G-code console now places cursor at end of command when browsing command history
-- fix: Prevent unnecessary tool calibration when closing a procedure by setting tool to None
-- fix: The CommunityBox will now properly display html entities (like &amp;) in topic titles
-- fix: Window background color is now set properly, eliminating white screen on startup
-- fix-regression: MountDispenser step in Solder now shows circuit (no longer blank)
-- fix-regression: ConfirmAlignmentStep target toolpath is once again highlighted
-- fix-regression: AlignmentStep target toolpaths are once again highlighted (in addition to the crosshairs)
-- fix-regression: AlignmentStep disabled drag-to-select
+Performance
+- Manual movements during alignment are now _way_ more responsive
+- Displaying the g-code console no longer impacts probing or dispensing
+- UI no longer stalls during computations
+- Application now starts slightly faster
+
+G-code Console
+- G-code console no longer adds an executed command to the command history if it is the same as the previous command
+- G-code console no longer clears the current unexecuted command input if you decide to browse command history
+- G-code console now places cursor at end of command when browsing command history
+
+Other
+- Prevent unnecessary tool calibration when closing a procedure by setting tool to None
+- The CommunityBox will now properly display html entities (like &amp;) in topic titles
+- Window background color is now set properly, eliminating white screen on startup
+- (regression) MountDispenser step in Solder now shows circuit (no longer blank)
+- (regression) ConfirmAlignmentStep target toolpath is once again highlighted
+- (regression) AlignmentStep target toolpaths are once again highlighted (in addition to the crosshairs)
+- (regression) AlignmentStep disabled drag-to-select
 
 #v0.13.0
 - fix: [Gerber] Orcad files with thermal pads are now interpreted properly (Thanks Aaron)
@@ -28,12 +33,12 @@
 - Drag-based selection is now aligned to the circuit. It's odd at first, but make selection
   on a rotated circuit as easy as it is for unrotated circuits
 - Click-based selection now has a few pixels of tolerance, so near misses will still select
-- Fix: Click-based selection properly selects the closest path
-- Fix: When reconnecting to the printer, remind it what the current tool is.
-- Fix: Alt+o will no longer executes an Outline outside of the OutlineStep
-- Fix: detect printer’s ‘--start--’ message even when it’s prefixed with a partially sent message from the previous run
-- Fix: Handle early end-of-file when parsing gerbers.
-- Fix: Treat no toolpaths in circuit as an error
+- fix: Click-based selection properly selects the closest path
+- fix: When reconnecting to the printer, remind it what the current tool is.
+- fix: Alt+o will no longer executes an Outline outside of the OutlineStep
+- fix: detect printer’s ‘--start--’ message even when it’s prefixed with a partially sent message from the previous run
+- fix: Handle early end-of-file when parsing gerbers.
+- fix: Treat no toolpaths in circuit as an error
 
 #v0.11.2
 - reduced sensitivity of hole detection (thanks @fred and @matt)
