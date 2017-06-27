@@ -1,3 +1,6 @@
+#v0.14.1
+- Add support for new serial number format
+
 #v0.14.0
 Performance
 - Manual movements during alignment are now _way_ more responsive
