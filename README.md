@@ -1,3 +1,17 @@
+#v0.15.0
+
+IMPORTANT
+- Print and Solder settings have changed. The new settings will override any changes
+you may have made. If you need to retrieve your altered settings you can find
+them in a file called config_v2.json (check the forums for more details).
+
+New Conductive Ink Settings
+- default print height changed from .1 to .08mm
+- default kick changed from 0.2 to 0.4mm
+
+New Solder Paste Settings
+- default pass spacing changed from .18mm to .15mm
+
 #v0.14.1
 - Add support for new serial number format
 
